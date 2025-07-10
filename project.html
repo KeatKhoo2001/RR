@@ -11,7 +11,7 @@
 
     <title>Ovix - Digital Agency Creative Portfolio Template</title>
 
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="images/x-icon"/>
+    <link rel="shortcut icon" href="assets/img/favicon/1.png" type="images/x-icon"/>
 
     <!-- css include -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -65,8 +65,8 @@
                         <nav class="main-menu collapse navbar-collapse">
                             <ul>
                                 <li><a href="index.html"><span>Home</span></a></li>
-                                <li><a href="about.html"><span>About</span></a></li>
-                                <li><a href="service.html"><span>Services</span></a></li>
+                                        <li><a href="about.html"><span>About</span></a></li>
+                                        <li><a href="service.html"><span>Services</span></a></li>
                                 <li><a href="project.html"><span>Portfolio</span></a></li>
                                 <li><a href="contact.html"><span>Contact</span></a></li>
                             </ul>
@@ -232,13 +232,15 @@
     <!-- main area start  -->
     <main>
         <!-- breadcrumb start  -->
-        <section class="breadcrumb pt-105 pb-90">
-            <div class="container">
-                <div class="breadcrumb__content text-center">
-                    <h2 class="breadcrumb__title">Project</h2>
-                    <ul class="breadcrumb__list">
-                        <li class="breadcrumb-item"><a href="index.html">HOme</a></li>
-                        <li class="breadcrumb-item">our project</li>
+        <section class="breadcrumb hero-project-bg" style="position: relative; min-height: 70vh; width: 100vw; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+          <div class="hero-bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('assets/img/ProjectBG.png') center center no-repeat; background-size: cover; opacity: 0.5; z-index: 0;"></div>
+          <div class="hero-bg-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 1;"></div>
+          <div class="container" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <div class="breadcrumb__content text-center" style="width: 100%;">
+              <h2 class="breadcrumb__title" style="color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.18);">Project</h2>
+              <ul class="breadcrumb__list" style="justify-content: center;">
+                <li class="breadcrumb-item"><a href="index.html" style="color: #fff;">HOme</a></li>
+                <li class="breadcrumb-item" style="color: #fff;">our project</li>
                     </ul>
                 </div>
             </div>
@@ -246,63 +248,53 @@
         <!-- breadcrumb end  -->
 
         <!-- portfolio start -->
-        <div class="portfolio pt-135 pb-150">
-            <div class="container">
-                <div class="row align-items-end mb-20">
-                    <div class="col-lg-5">
-                        <div class="section-title mb-30">
-                            <span class="sub-title wow fadeInRight" data-wow-duration=".7s">Core Services</span>
-                            <h3 class="title xb-split-text split-in-right">Discover Our <br> <span>Capabilities</span></h3>
+        <section class="portfolio-showcase-section">
+          <div class="portfolio-showcase-grid">
+            <div class="portfolio-item" data-filename="Aik Huat Group">
+              <img src="assets/img/Portfolio RR/Aik Huat Group.png" alt="Aik Huat Group">
                         </div>
+            <div class="portfolio-item" data-filename="Beauty Product">
+              <img src="assets/img/Portfolio RR/Beauty Product.png" alt="Beauty Product">
                     </div>
-                    <div class="col-lg-7">
-                        <div class="portfolio-menu mb-65 text-lg-end">
-                            <button class="active" data-filter="*">SEE ALL</button>
-                            <button data-filter=".cat1" class="">Website</button>
-                            <button data-filter=".cat2">Branding</button>
-                            <button data-filter=".cat3">landing</button>
-                            <button data-filter=".cat4">App</button>
+            <div class="portfolio-item" data-filename="Case Study Documentary">
+              <img src="assets/img/Portfolio RR/Case Study Documentary.png" alt="Case Study Documentary">
                         </div> 
+            <div class="portfolio-item" data-filename="Chin Hin">
+              <img src="assets/img/Portfolio RR/Chin Hin.png" alt="Chin Hin">
                     </div>
+            <div class="portfolio-item" data-filename="Event Highlight Showcase">
+              <img src="assets/img/Portfolio RR/Event Highlight Showcase.png" alt="Event Highlight Showcase">
                 </div>
-                <div class="row grid g-150 mt-none-60">
-                    <div class="col-lg-6 col-md-6 grid-item cat1 cat2 cat4">
-                        <div class="portfolio-item xb-img-reveal-item mt-60" data-cat="3d Artiest"
-                        data-title="Finance & Banking website" data-fx="1">
-                            <div class="xbImage__hover image-1">
-                                <a href="project-single.html">
-                                    <img src="assets/img/portfolio/img_01.jpg" alt="img">
-                                </a>
+            <div class="portfolio-item" data-filename="Global Entrepreneur Xchange">
+              <img src="assets/img/Portfolio RR/Global Entrepreneur Xchange.png" alt="Global Entrepreneur Xchange">
                             </div>
+            <div class="portfolio-item" data-filename="Leadership Convergence">
+              <img src="assets/img/Portfolio RR/Leadership Convergence.png" alt="Leadership Convergence">
                         </div>
+            <div class="portfolio-item" data-filename="Metal Master">
+              <img src="assets/img/Portfolio RR/Metal Master.png" alt="Metal Master">
                     </div>
-                    <div class="col-lg-6 col-md-6 grid-item cat3 cat2 cat4">
-                        <div class="portfolio-item xb-img-reveal-item mt-60" data-cat="3d Artiest"
-                        data-title="Finance & Banking website" data-fx="1">
-                            <div class="xbImage__hover image-2">
-                                <a href="project-single.html"><img src="assets/img/portfolio/img_02.jpg" alt="img"></a>
+            <div class="portfolio-item" data-filename="Nota Cafe">
+              <img src="assets/img/Portfolio RR/Nota Cafe.png" alt="Nota Cafe">
                             </div>
+            <div class="portfolio-item" data-filename="Property Reels">
+              <img src="assets/img/Portfolio RR/Property Reels.png" alt="Property Reels">
                         </div>
+            <div class="portfolio-item" data-filename="QISS">
+              <img src="assets/img/Portfolio RR/QISS.png" alt="QISS">
                     </div>
-                    <div class="col-lg-6 col-md-6 grid-item cat1 cat2 cat4">
-                        <div class="portfolio-item xb-img-reveal-item mt-60" data-cat="3d Artiest"
-                        data-title="Finance & Banking website" data-fx="1">
-                            <div class="xbImage__hover image-3">
-                                <a href="project-single.html"><img src="assets/img/portfolio/img_03.jpg" alt="img"></a>
+            <div class="portfolio-item" data-filename="Valencia">
+              <img src="assets/img/Portfolio RR/Valencia.png" alt="Valencia">
                             </div>
+            <div class="portfolio-item portfolio-item-large" data-filename="Property Projects">
+              <img src="assets/img/Portfolio RR/Property Projects.png" alt="Property Projects">
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 grid-item cat4 cat1 cat3">
-                        <div class="portfolio-item xb-img-reveal-item mt-60" data-cat="3d Artiest"
-                        data-title="Finance & Banking website" data-fx="1">
-                            <div class="xbImage__hover image-4">
-                                <a href="project-single.html"><img src="assets/img/portfolio/img_04.jpg" alt="img"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
+            <div id="portfolio-hover-label" class="portfolio-hover-label" style="display:none;">
+              <div class="label-title">Rev Reactor</div>
+              <div class="label-filename"></div>
             </div>
         </div>
+        </section>
         <!-- portfolio end -->
         
 
