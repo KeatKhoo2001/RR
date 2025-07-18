@@ -13359,4 +13359,66 @@ abbr[title] {
     min-height: 180px;
   }
 }
-
+.xb-team.pos-rel {
+  position: relative;
+  overflow: visible;
+}
+.team-hover-desc {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin-top: 18px;
+  min-width: 260px;
+  max-width: 340px;
+  background: #C4EF17;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  z-index: 10;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  text-align: left;
+  transition: opacity 0.25s, transform 0.25s;
+  opacity: 0;
+  pointer-events: none;
+}
+.xb-team.pos-rel:hover .team-hover-desc {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}.team-hover-desc {
+  position: absolute;
+  min-width: 260px;
+  max-width: 340px;
+  background: #C4EF17;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+  z-index: 10;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  text-align: left;
+  pointer-events: none;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+}.faq-accordion-boxed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .faq-accordion-boxed {
+    grid-template-columns: 1fr;
+  }
+}
+.faq-item-box {
+  /* 保持原有样式 */
+}

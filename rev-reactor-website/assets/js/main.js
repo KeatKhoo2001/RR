@@ -1008,6 +1008,23 @@
     });
   });
 })();
-
+document.querySelectorAll('.xb-team').forEach(function(card) {
+	const desc = card.querySelector('.team-hover-desc');
+	card.addEventListener('mousemove', function(e) {
+	  desc.style.display = 'block';
+	  desc.style.opacity = '1';
+	  // 获取鼠标在卡片内的坐标
+	  const rect = card.getBoundingClientRect();
+	  const x = e.clientX - rect.left;
+	  const y = e.clientY - rect.top;
+	  // 让tooltip在鼠标右下方偏移
+	  desc.style.left = (x + 20) + 'px';
+	  desc.style.top = (y + 20) + 'px';
+	});
+	card.addEventListener('mouseleave', function() {
+	  desc.style.display = 'none';
+	  desc.style.opacity = '0';
+	});
+  });
 
 
